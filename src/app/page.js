@@ -8,9 +8,7 @@ const kingdoms = [
   { name: "Terras de Myrvalen", start: 0, end: 500 },
   { name: "Clãs de Norheim", start: 0, end: 350 },
   { name: "Aliança de Zandor", start: 0, end: 600 },
-  { name: "Reinado de Lysara", start: 0, end: 400 },
   { name: "Província de Quelmar", start: 0, end: 550 },
-  { name: "Suserania de Kharod", start: 0, end: 480 },
 ];
 
 export default function Home() {
