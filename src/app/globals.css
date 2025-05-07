@@ -54,6 +54,7 @@ a {
 .container {
   max-width: 800px;
   margin: auto;
+  margin-top: 44px;
   padding: 2rem;
   background: linear-gradient(to bottom, #f8f4e3, #e5d8b0);
   border: 4px solid #a68b5b;

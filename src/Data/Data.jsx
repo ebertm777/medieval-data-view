@@ -9,7 +9,7 @@ export default function TimelineChart({ data }) {
     if (!data || data.length === 0) return;
 
     const svg = d3.select(ref.current);
-    svg.selectAll("*").remove(); // limpar
+    svg.selectAll("*").remove();
 
     const width = 600;
     const height = data.length * 40;
@@ -33,7 +33,7 @@ export default function TimelineChart({ data }) {
       .attr("fill", "#8b5e3c")
       .attr("width", 0) 
       .transition()
-      .duration(2000) 
+      .duration(1600) 
       .ease(d3.easeCubicInOut) 
       .attr("width", (d) => x(d.end - d.start));
 
@@ -43,7 +43,7 @@ export default function TimelineChart({ data }) {
       .enter()
       .append("text")
       .text((d) => d.name)
-      .attr("x", 5)
+      .attr("x", 10)
       .attr("y", (d, i) => i * 40 + 20)
       .attr("fill", "#fdf6e3")
       .style("font-family", "MedievalSharp");
