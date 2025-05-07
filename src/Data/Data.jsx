@@ -30,7 +30,12 @@ export default function TimelineChart({ data }) {
       .attr("y", (d, i) => i * 40)
       .attr("width", (d) => x(d.end - d.start))
       .attr("height", 30)
-      .attr("fill", "#8b5e3c");
+      .attr("fill", "#8b5e3c")
+      .attr("width", 0) 
+      .transition()
+      .duration(2000) 
+      .ease(d3.easeCubicInOut) 
+      .attr("width", (d) => x(d.end - d.start));
 
     svg
       .selectAll("text")
