@@ -2,34 +2,23 @@
 
 Uma aplicação de visualização de dados históricos com tema medieval, desenvolvida em **React** e **D3.js**, que exibe uma **linha do tempo interativa** dos reinos fictícios.
 
-## ✨ Funcionalidades ⋆༺𓆩⚔𓆪༻⋆
+## ✨ Funcionalidades
 
 - Exibição visual de linhas do tempo para diferentes reinos medievais
 - Interface estilizada com fontes temáticas e fundo medieval
 - Componente reutilizável com dados dinâmicos
 
-## 📦 Tecnologias Utilizadas ⋆༺𓆩⚔𓆪༻⋆
+## 📦 Tecnologias Utilizadas
 
 - [React](https://reactjs.org/)
 - [D3.js](https://d3js.org/)
 - [Google Fonts - MedievalSharp](https://fonts.google.com/specimen/MedievalSharp)
 
-## 📂 Estrutura do Projeto ⋆༺𓆩⚔𓆪༻⋆
-
-/src
-├── Data/
-│ └── Data.js # Componente TimelineChart
-├── styles/
-│ └── globals.css # Estilo global com tema medieval
-└── app/
-└── page.js # Página principal com dados dos reinos
-
-## 🧙 Como Executar Localmente ⋆༺𓆩⚔𓆪༻⋆
+## 🧙 Como Executar Localmente
 
 1. **Clone o repositório**
    git clone https://github.com/seu-usuario/medieval-data-view.git
    cd medieval-data-view
-   
 2. npm install
 
 3. npm run dev
