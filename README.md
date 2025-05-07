@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏰 Medieval Data View
 
-## Getting Started
+Uma aplicação de visualização de dados históricos com tema medieval, desenvolvida em **React** e **D3.js**, que exibe uma **linha do tempo interativa** dos reinos fictícios.
 
-First, run the development server:
+![screenshot](./preview.png) <!-- opcional: coloque uma imagem da interface -->
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Funcionalidades
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Exibição visual de linhas do tempo para diferentes reinos medievais
+- Interface estilizada com fontes temáticas e fundo medieval
+- Componente reutilizável com dados dinâmicos
+- Responsivo ao tema claro/escuro do sistema
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📦 Tecnologias Utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [React](https://reactjs.org/)
+- [D3.js](https://d3js.org/)
+- [Google Fonts - MedievalSharp](https://fonts.google.com/specimen/MedievalSharp)
+- CSS customizado com suporte a dark mode
 
-## Learn More
+## 📂 Estrutura do Projeto
 
-To learn more about Next.js, take a look at the following resources:
+/src
+├── Data/
+│ └── Data.js # Componente TimelineChart
+├── styles/
+│ └── globals.css # Estilo global com tema medieval
+└── app/
+└── page.js # Página principal com dados dos reinos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧙 Como Executar Localmente
 
-## Deploy on Vercel
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/seu-usuario/medieval-data-view.git
+   cd medieval-data-view
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. npm install
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. npm run dev
+
+4. Acesse http://localhost:3000 no seu navegador.
+
+
+🛠️ Personalização
+Você pode adicionar novos reinos ou eventos no componente Home, alterando o array kingdoms:
+
+
+🏹 Inspiração
+Este projeto foi inspirado em interfaces de jogos de estratégia e RPGs medievais, combinando visualizações modernas com um tema histórico-fantástico.
+
+📜 Licença
+Este projeto está licenciado sob a MIT License.
