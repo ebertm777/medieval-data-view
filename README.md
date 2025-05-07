@@ -36,3 +36,6 @@ Este projeto está licenciado sob a MIT License.
 
 
 # 🐉 Este Projeto em breve será uma feature do [Dungeon Crawler](https://github.com/ebertm777/dungeon-crawler-cards)
+ 
+#                                               ⋆༺𓆩⚔𓆪༻⋆
+# 🐉 Este Projeto em breve será uma feature do [Dungeon Crawler](https://github.com/ebertm777/dungeon-crawler-cards)
