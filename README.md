@@ -33,6 +33,6 @@ Este projeto foi inspirado em interfaces de jogos de estratégia e RPGs medievai
 
 📜 Licença
 Este projeto está licenciado sob a MIT License.
-
-                                                   ⋆༺𓆩⚔𓆪༻⋆
+ 
+#                                               ⋆༺𓆩⚔𓆪༻⋆
 # 🐉 Este Projeto em breve será uma feature do [Dungeon Crawler](https://github.com/ebertm777/dungeon-crawler-cards)
