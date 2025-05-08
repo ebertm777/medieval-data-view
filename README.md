@@ -4,8 +4,8 @@ Uma aplicação de visualização de dados históricos com tema medieval, desenv
 
 ## ✨ Funcionalidades
 
-- Exibição visual de linhas do tempo para diferentes reinos medievais
-- Interface estilizada com fontes temáticas e fundo medieval
+- Exibição visual de dados de uma aventura RPG
+- Interface estilizada com temática medieval
 - Componente reutilizável com dados dinâmicos
 
 ## 📦 Tecnologias Utilizadas
