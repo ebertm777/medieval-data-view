@@ -2,7 +2,7 @@
 import { useRef, useEffect } from "react";
 import * as d3 from "d3";
 
-export default function TimelineChart({ data }) {
+export default function DamageChart({ data }) {
   const ref = useRef();
 
   useEffect(() => {
@@ -17,24 +17,25 @@ export default function TimelineChart({ data }) {
 
     svg.attr("width", width).attr("height", height);
 
+    const maxDamage = d3.max(data, (d) => d.damage);
     const x = d3
       .scaleLinear()
-      .domain([0, d3.max(data, (d) => d.end)])
+      .domain([0, maxDamage])
       .range([0, width - 100]);
 
-    // 1. Escudo SVG à esquerda
+    // 1. Runa mágica (imagem)
     svg
       .selectAll("image")
       .data(data)
       .enter()
       .append("image")
-      .attr("xlink:href", "/shield.svg")
+      .attr("xlink:href", "/rune.svg")
       .attr("x", 0)
       .attr("y", (_, i) => i * rowHeight + 2)
       .attr("width", 24)
       .attr("height", 24);
 
-    // 2. Barras de contribuição
+    // 2. Barras de dano
     svg
       .selectAll("rect")
       .data(data)
@@ -44,27 +45,27 @@ export default function TimelineChart({ data }) {
       .attr("y", (_, i) => i * rowHeight)
       .attr("height", 30)
       .attr("width", 0)
-      .attr("fill", "#8b5e3c")
+      .attr("fill", "#9f1818")
       .transition()
       .duration(1600)
       .ease(d3.easeCubicInOut)
-      .attr("width", (d) => x(d.end - d.start));
+      .attr("width", (d) => x(d.damage));
 
-    // 3. Nome do jogador por cima da barra
+    // 3. Texto combinado (nome + dano) por cima da barra
     svg
-      .selectAll(".name-label")
+      .selectAll(".damage-label")
       .data(data)
       .enter()
       .append("text")
-      .attr("class", "name-label")
-      .text((d) => d.name)
+      .attr("class", "damage-label")
+      .text((d) => `${d.name}: ${d.damage} dmg`)
       .attr("x", 40)
       .attr("y", (_, i) => i * rowHeight + 20)
-      .attr("fill", "#fdf6e3")
+      .attr("fill", "#fff")
       .style("font-family", "MedievalSharp")
       .style("font-size", "12px")
       .style("pointer-events", "none");
   }, [data]);
 
-  return <svg style={{ marginTop: "16px" }} ref={ref}></svg>;
+  return <svg style={{marginTop: '16px'}} ref={ref}></svg>;
 }
